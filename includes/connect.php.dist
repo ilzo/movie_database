@@ -1,0 +1,18 @@
+#This is what connect.php should look like. Replace host, user and password according to your mysql-database settings.
+
+<?php
+$host = 'dataBaseHost';
+$dbname = 'moviecollection'; 
+$user = 'dataBaseUser'; 
+$pass = 'dataBasePass'; 
+
+try {
+	$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+	$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+	$DBH->exec("SET NAMES utf8;");
+} catch(PDOException $e) {
+	echo "Could not connect to database.";
+	file_put_contents('../log/PDOErrors.txt', $e->getMessage()."\n", FILE_APPEND);
+}
+
+?>

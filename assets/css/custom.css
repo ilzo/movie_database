@@ -1,0 +1,57 @@
+#content{
+	padding:2.5%;
+}
+
+.activebutton{
+	background-color: #970b0e;
+}
+
+#form-fieldset {
+	border-style: solid;
+	border-width: 1.0px;
+	padding: 1px 1px 1px 15px;
+}
+
+#rateyo-average-grade {
+	float: left;
+	padding-left: 0;
+	padding-top: 1.8em;
+}
+
+.movie-panel{
+	margin: 5% 5% 5% 0% !important;
+	text-align:center;
+}
+
+.panel-image {
+	max-height: 268px;
+}
+
+.rateyo-review-grade {
+	float: left;
+	padding-left: 0;
+	padding-top: 2.0em;
+}
+
+.server-response-container {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+
+.callout.success {
+    background-color: #e1faea;
+	margin-top: -4px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.callout.alert {
+    background-color: #ff4d4d;
+	margin-top: -4px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+
