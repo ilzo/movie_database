@@ -32,7 +32,7 @@ $input=$_POST['input'];
 }
 		
 } catch(PDOException $e) {
-		echo "Virhe";
+		echo "Error";
 		file_put_contents('./log/PDOErrors.txt', $e->getMessage()."\n", FILE_APPEND);
 	}
 ?>	
